@@ -1,0 +1,484 @@
+@charset "UTF-8";
+
+/* ******************** 共通 ******************** */
+/* body 青緑文字 */
+body {
+	color: #00c993;
+	font-family: Candara, "メイリオ", Meiryo;
+}
+
+/* グレー50%文字 */
+.text1 {
+	color: #808080;
+}
+
+/* メインコンテンツ */
+#mainCont {
+	width: 900px;
+	margin: 70px 0 0 0;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+}
+@media screen and (max-width: 769px){
+	#mainCont {
+		width: 100%;
+		margin: 30px 0 0 0;
+	}
+}
+
+#mainCont:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/* 画面上部(罫線なし) */
+#topCont {
+	width: 900px;
+	margin: 50px 0 0 0;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media screen and (max-width: 769px){
+	#topCont {
+		width: 100%;
+	}
+	#topCont:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+/* 画面下部 */
+#botCont {
+	width: 900px;
+	margin: 70px 0;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	border-top: 3px solid #00c993;
+	display: none;
+}
+@media screen and (max-width: 769px){
+	#botCont {
+		width: 100%;
+	}
+}
+
+/* 画面右上部 */
+.topContName {
+	text-align: right;
+	font-weight: bold;
+	font-size: 20px;
+	color: #00e0a8;
+	margin-bottom: 10px;
+}
+@media screen and (max-width: 769px){
+	.topContName {
+		text-align: center;
+	}
+}
+
+/* 画面上部リンク(全般) */
+.topContLink {
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+@media screen and (max-width: 769px){
+	.topContLink {
+		margin: 0 auto;
+		font-size: 16px;
+	}
+}
+
+/* 画面上部リンクリスト */
+.topContLink ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+/* 画面上部リンクリスト(個別) */
+.topContLink li {
+	display: inline;
+	float: left;
+	padding: 0;
+	margin: 0 1px;
+	width: 144px;
+	line-height: 16px;
+	border: 2px solid #00c993;
+	background-color: #00c993;
+}
+@media screen and (max-width: 769px){
+	.topContLink li {
+		float: left;
+		width: 31%;
+		margin: 3px 2px;
+	}
+}
+
+.topContLink li:hover {
+	background-color: #00c993;
+}
+
+.topContLink a {
+	color: #FFFFFF;
+}
+
+.topContLink a:hover {
+	color: #808080;
+}
+
+/* 画面上部リンクリスト(該当ページ) */
+#topContLinkChecked {
+	background-color: #FFFFFF;
+	color: #b2b2b2;
+}
+
+/* コンテンツタイトル */
+.mainContTitle {
+	margin: 0 0 40px 0;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+}
+@media screen and (max-width: 769px){
+	.mainContTitle {
+		margin: 20px 0;
+	}
+}
+
+/* リンク 通常時 */
+a {
+	color: #00c993;
+	text-decoration: none;
+}
+
+/* リンク マウスオーバー時 */
+a:hover {
+	color: #808080;
+}
+
+/* ******************** home ******************** */
+/* 画面上部(罫線あり) */
+#topContHome {
+	width: 900px;
+	margin: 70px 0;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 3px solid #00c993;
+}
+@media screen and (max-width: 769px){
+	#topContHome {
+		width: 100%;
+		margin: 35px 0;
+	}
+}
+
+/* home(左側) */
+#homeMiddle {
+	float: right;
+	width: 180px;
+	margin: 0 0 0 120px;
+	padding: 40px 0 0 0;
+	text-align: left;
+}
+@media screen and (max-width: 769px){
+	#homeMiddle {
+		float: none;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+/* home(右側) */
+#homeRight {
+	float: right;
+	width: 600px;
+	text-align: center;
+}
+@media screen and (max-width: 769px){
+	#homeRight {
+		float: none;
+		width: 100%;
+	}
+}
+
+/* copyright home */
+.copyStrHome {
+	text-align: right;
+	font-size: 12px;
+}
+
+/* homeリンク リスト */
+.homeLi {
+	list-style-type: none;
+	padding-left: 0;
+}
+@media screen and (max-width: 769px){
+	.homeLi {
+		text-align: center;
+	}
+}
+
+/* homeリンク リスト文字 */
+.homeLi li {
+	font-size: 22px;
+}
+@media screen and (max-width: 769px){
+	.homeLi li {
+		display: inline-block;
+		width: 30%;
+		height: 40px;
+	}
+}
+
+/* home名前調整 */
+.homeName {
+	text-align: center;
+	margin-top: 50px;
+	font-size: 15px;
+}
+@media screen and (max-width: 769px){
+	.homeName {
+		width: 100%;
+		margin: 25px 0;
+	}
+}
+
+/* home画像 */
+#homeImg {
+	width: 400px;
+	height: 476px;
+}
+@media screen and (max-width: 769px){
+	#homeImg {
+		width: 300px;
+		height: 357px;
+	}
+}
+
+/* home画像ぼかし処理1 */
+.homeImgFrame {
+	display: inline-block;
+	position: relative;
+	width: 400px;
+	height: 476px;
+}
+@media screen and (max-width: 769px){
+	.homeImgFrame {
+		width: 300px;
+		height: 357px;
+	}
+}
+
+/* home画像ぼかし処理2 */
+.homeImgFrame:after {
+	position: absolute;
+	content: " ";
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow:
+	inset 0 0 20px #fff /* 背景色と同じ色 */,
+	inset 0 0 20px #fff,
+	inset 0 0 20px #fff,
+	inset 0 0 20px #fff;
+}
+
+/* ******************** information ******************** */
+/* imformation(内容) */
+#infoMain {
+	width: 50%;
+	padding: 0 25%;
+	text-align: center;
+}
+#infoMain div {
+	margin: 0 0 40px 0;
+}
+
+@media screen and (max-width: 769px){
+	#infoMain {
+		width: 90%;
+		padding: 0 5%;
+		text-align: center;
+	}
+}
+
+/* ******************** blog ******************** */
+/* blog(内容) */
+#blogMain {
+	width: 600px;
+	padding: 0 0 0 300px;
+	color: #808080;
+}
+@media screen and (max-width: 769px){
+	#blogMain {
+		width: 80%;
+		padding: 0;
+		margin: 0 auto;
+	}
+}
+
+/* ブログ一覧テーブル */
+.blogTbl tr{
+	height: 40px;
+}
+
+/* ブログ一覧 リンク 通常時 */
+.blogTbl a {
+	color: #808080;
+	text-decoration: none;
+}
+
+/* ブログ一覧 リンク マウスオーバー時 */
+.blogTbl a:hover {
+	color: #00c993;
+}
+
+/* ******************** profile ******************** */
+/* profile(内容) */
+#profileMain {
+	width: 700px;
+	padding: 0 0 0 200px;
+	color: #808080;
+}
+@media screen and (max-width: 769px){
+	#profileMain {
+		width: 100%;
+		padding: 0;
+		margin: 0 10px
+	}
+}
+
+/* profile 一覧テーブル */
+.profileTbl {
+	border-spacing: 10px;
+}
+
+/* profile 一覧テーブル TD */
+.profileTbl td {
+	text-align: left;
+	vertical-align: top;
+}
+
+/* profile 一覧テーブル TD 年 */
+.profileTblTdYear {
+	width: 100px;
+}
+@media screen and (max-width: 769px){
+	.profileTblTdYear {
+		width: 25%;
+	}
+}
+
+/* ******************** works ******************** */
+/* works(内容) */
+#worksMain {
+	text-align: center;
+}
+
+/* タイトル */
+@media screen and (max-width: 769px){
+	#worksMainTitle {
+		display: inline-block;
+		margin: 10px;
+	}
+}
+
+/* リンク 通常時 */
+#worksMain a {
+	color: #808080;
+	text-decoration: none;
+	font-size: large;
+}
+@media screen and (max-width: 769px){
+	#worksMain a {
+		line-height: 1.4em;
+	}
+}
+
+
+/* リンク マウスオーバー時 */
+#worksMain a:hover {
+	color: #00c993;
+}
+
+/* ******************** workslist ******************** */
+/* workslist(内容) */
+#workslistMain {
+	width: 830px;
+	padding: 0 0 0 70px;
+	text-align: left;
+	color: #808080;
+}
+@media screen and (max-width: 769px){
+	#workslistMain {
+		width: 100%;
+		padding: 0;
+		margin: 0 10px
+	}
+}
+
+/* workslist 一覧テーブル 配置 */
+.workslistTbl td {
+	text-align: left;
+	vertical-align: top;
+}
+
+/* workslist 一覧テーブル 画像 */
+.workslistTbl img {
+	 border: none;
+	 max-height: 100px;
+	 max-width: 77px;
+	 vertical-align:middle;
+	 margin: 0 20px 20px 0;
+}
+
+/* copyright workslist */
+.copyStrWorkslist {
+	text-align: center;
+	font-size: 15px;
+}
+
+/* ******************** hall ******************** */
+/* hall(内容) */
+#hallMain {
+	width: 715px;
+	padding: 0 0 0 185px;
+	text-align: left;
+	color: #808080;
+}
+@media screen and (max-width: 769px){
+	#hallMain {
+		width: 250px;
+		padding: 0;
+		margin: 0 auto;
+	}
+}
+
+/* hall 一覧テーブル 配置 */
+.hallTbl td {
+	text-align: left;
+	vertical-align: top;
+}
+
+/* hall 一覧テーブル 画像 */
+.hallTbl img {
+	 border: none;
+	 max-height: 200px;
+	 max-width: 200px;
+	 vertical-align:middle;
+	 margin: 0 20px 20px 0;
+}
+
